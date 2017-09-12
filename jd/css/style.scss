@@ -1,0 +1,65 @@
+.app{
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+    display:-webkit-flex;
+    -webkit-flex-direction:column;
+    font-size:.14rem;
+}
+.header{
+    height:.4rem;
+    line-height:.4rem;
+    border-bottom:1px solid #ccc;
+    i{
+        position:absolute;
+        left:.1rem;
+    }
+    h3{
+        text-align:center;
+        font-weight:normal;    
+        font-size:.18rem;    
+    }
+}
+.main ul li{
+   width:90%;
+   height:.5rem;
+   margin:auto;
+   line-height:.5rem;
+   border-bottom:1px solid #ccc;
+   input{
+       border:none;
+       font-size:.16rem;
+   }
+   span{
+       border-left:1px solid #ccc;
+       padding-left:10px;
+   }
+   button{
+       border:none;
+       font-size:.16rem;
+       background:#fff;
+   }
+}
+.main p{
+    width:90%;
+    margin:auto;
+}
+.register{
+    width:90%;
+    height:.45rem;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:10px auto;
+    border:none;
+    border-radius:3px;
+    line-height:.45rem;
+    text-align:center;
+}
+.btn{
+    width:90%;
+    height:.45rem;
+    margin:80px auto;
+    border:none;
+}

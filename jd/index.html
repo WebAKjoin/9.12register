@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		
+		
+			<div id='app'>
+			
+			</div>
+		
+		
+		<template id="tem">
+			<div>
+				<transition :duration="3000" name="custom-classes-transition" enter-active-class="animated tada" leave-active-class="animated bounceOutRight" >
+					<div class='app' v-if='show'>
+						<head-h></head-h>
+						<main-h></main-h>
+						<button-h></button-h>
+						<button @click='show=!show' class='btn'>点击</button>	
+					</div>
+				</transition>
+
+			</div>
+			
+		</template>
+		
+		<template id='head'>
+			<div class="header">
+				<i>{{icon}}</i>
+				<h3>{{title}}</h3>
+			</div>
+		</template>
+		
+		<template id='main'>
+			<div class="main">
+				<ul>
+					<li>
+						<input type="text" placeholder="请输入图片验证码" v-model="yzm"/>
+						<span>kxgn</span>
+					</li>
+					<li>
+						<span>+86</span>
+						<input type="text" class='verifys' placeholder="请输入手机号" v-model="phone"/>
+						<button type="button">获取验证码</button>
+					</li>
+					<li>
+						<input type="text" placeholder="请输入手机验证码" v-model="phoneyzm"/>
+					</li>
+					<li>
+						<input type="text" placeholder="请设置6-20位登录密码" v-model="passwords"/>
+					</li>
+				</ul>
+				<p>
+					密码由6-20位字母、数字或半角符号组成，不能是10位以下纯数字/字母/半角符号,字母需区分大小写
+				</p>
+			</div>
+		</template>
+		
+		<template id='button'>
+			<div>
+				<button class='register' @click='consoleFn'>注册</button>
+			</div>
+		</template>
+		
+		<script type="text/javascript" src='js/vue.js'></script>
+		<script type="text/javascript" src='js/index.js'></script>
+	</body>
+</html>
